@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Home</title>
+
+<!-- Behavioral Meta Data -->
+<meta name="Christmas-Landing-Page" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+<!-- Styles -->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/media-query.css">
+
+</head>
+<body>
+
+
+
+<div id="loader"></div>
+<!-- Parallax Container -->
+<div id="container" class="parallax-container snow">
+	<ul id="christmas_scene" class="christmas-scene" >
+		<li class="layer" data-depth="0.80"><div class="layer-5 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.60"><div class="layer-4 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.40"><div class="layer-3 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.20"><div class="layer-2 layer-photo photo-zoom"></div></li>
+		<li class="layer" data-depth="0.00"><div class="layer-1 layer-photo"></div></li>
+	</ul>
+	<!-- Countdown Container -->
+    <!-- Merry Christmas Text -> You can replace with anything you like! -->
+	<div class="merry-christmas-text">Merry Christmas</div>
+
+	<!-- Happy new year 2018 photo -->
+	<div class="happy-new-year"></div>
+
+	<!-- Contact Pole Image -> From here the E-mail modal is triggered -->
+	<div id="mail_pole">
+		<img src="images/pole.png" class="img-responsive" alt="mail-pole">
+	</div>
+	<!-- Christmas Tree -->
+	<img src="images/christmas-tree.png" alt="christmas-tree" id="christmas_tree">
+</div>
+<!-- Scripts -->
+<script src="js/jquery-3.1.1.min.js"></script> 
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="js/jquery.countdown.js"></script> 
+<script src="js/jquery.parallax.js"></script>
+<script src="js/snow.js"></script>
+<script src="js/main.js"></script>
+<script>
+	// Parallax Init
+	$('#christmas_scene').parallax({
+		scalarX: 5,
+		scalarY: 15,
+		invertY: false
+	});
+</script>
+</body>
+</html>
